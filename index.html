@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudio Só Régua</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    /* Cabeçalho */
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+                  url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200") center/cover;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; margin-bottom: 25px; }
+
+    /* Botão WhatsApp */
+    .btn {
+      display: inline-block;
+      background: #25d366;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover { background: #1ebe5b; }
+
+    section { padding: 50px 20px; max-width: 900px; margin: 0 auto; }
+    h2 { text-align: center; margin-bottom: 30px; color: #e63946; }
+
+    /* Serviços (Flexbox) */
+    .servicos {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background: #1e1e1e;
+      padding: 25px;
+      border-radius: 10px;
+      flex: 1 1 220px;
+      text-align: center;
+    }
+    .card h3 { margin-bottom: 8px; }
+    .preco { color: #e63946; font-size: 1.4rem; font-weight: bold; }
+
+    /* Localização */
+    .info { text-align: center; }
+    .info p { margin-bottom: 8px; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      font-size: .9rem;
+    }
+
+    /* Ajuste para telas maiores (media query) */
+    @media (min-width: 768px) {
+      header h1 { font-size: 3.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Studio Só Régua</h1>
+    <p>Corte e barba com hora marcada, sem espera.</p>
+    <!-- Troque 5511999999999 pelo número real: 55 + DDD + número -->
+    <a class="btn" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio.">
+      Agendar no WhatsApp
+    </a>
+  </header>
+
+  <section>
+    <h2>Nossos Serviços</h2>
+    <div class="servicos">
+      <div class="card">
+        <h3>Degradê</h3>
+        <p class="preco">R$ 45</p>
+      </div>
+      <div class="card">
+        <h3>Bigode e Sobrancelha</h3>
+        <p class="preco">R$ 35</p>
+      </div>
+      <div class="card">
+        <h3>Corte + Bigode e Sobrancelha</h3>
+        <p class="preco">R$ 60</p>
+      </div>
+      <div class="card">
+        <h3>Plano Mensal</h3>
+        <p class="preco">R$ 200</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <h2>Onde Estamos</h2>
+    <p>Rua Exemplo, 123 - Centro</p>
+    <p>Segunda a sábado: 9h às 19h</p>
+  </section>
+
+  <footer>
+    © 2026 Barbearia Estilo Fino - Projeto de portfólio
+  </footer>
+
+</body>
+</html>
